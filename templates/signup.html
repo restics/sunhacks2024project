@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign in</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <header id="top">
   <a href="index.html" aria-label="Go to home page">
-     <img src="images/12.svg" alt="Health hero Logo" width="240" height="240"></a> 
+     <img src="{{ url_for('static', filename='images/12.svg') }}" alt="Health hero Logo" width="240" height="240"></a>
      <h1><a href="index.html" aria-label="Go to the Health hero Logo">Health hero</a></h1>
  
       <nav aria-label="Main Navigation">
         <ul>
-             <li><a href="index.html" >Home</a></li>
-             <li><a href="chat.html">Content</a></li>
-             <li><a href="signup.html">Login</a></li>
+            <li><a href="#" aria-current="page">Home</a></li>
+            <li><a href="/signup">Sign up</a></li>
           </ul>
       </nav>
  </header>
@@ -30,7 +30,7 @@
       {% endif %}
     {% endwith %}
 
-    <form method="POST" action="/login">
+    <form method="POST" action="/signup">
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control" id="email" name="email" required>

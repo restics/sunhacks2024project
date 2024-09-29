@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Content chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <header id="top">
     <a href="index.html" aria-label="Go to home page">
-       <img src="images/12.svg" alt="Health hero Logo" width="240" height="240"></a> 
+       <img src="/static/images/12.svg" alt="Health hero Logo" width="240" height="240"></a>
        <h1><a href="index.html" aria-label="Go to the Health hero Logo">Health hero</a></h1>
    
         <nav aria-label="Main Navigation">
           <ul>
-               <li><a href="index.html" >Home</a></li>
-               <li><a href="#" aria-current="page">Content</a></li>
-               <li><a href="signup.html">Login</a></li>
+                    <li><a href="#" aria-current="page">Home</a></li>
+                    <li><a href="/signup">Sign up</a></li>
             </ul>
         </nav>
    </header>
 <body>
     <div class="container">
-    <h2>i searched something</h2>
+    <form method="POST" action="/chat">
+        <input id="text" type="text" name="msg" placeholder="Message" class="form-control">
+        <button type="submit" id="send" class="btn btn-warning">Send</button>
+        {% if response %}
+            <label id="response">{{response}}</label>
+        {% endif %}
+    </form>
 </div>
 <footer>
     <p>Copyright &copy; 2024 Sunhackers</p>
