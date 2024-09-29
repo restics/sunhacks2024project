@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+  <header id="top">
+    <a href="index.html" aria-label="Go to home page">
+       <img src="images/12.svg" alt="Health hero Logo" width="240" height="240"></a> 
+       <h1><a href="index.html" aria-label="Go to the Health hero Logo">Health hero</a></h1>
+   
+        <nav aria-label="Main Navigation">
+          <ul>
+               <li><a href="index.html" >Home</a></li>
+               <li><a href="#" aria-current="page">Content</a></li>
+               <li><a href="signup.html">Login</a></li>
+            </ul>
+        </nav>
+   </header>
 <div class="container">
-    <h2>Login</h2>
+   <img src="images/12.svg" alt="logo" width="200" height="200"> 
+  <h2>Login</h2>
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
         <div class="alert alert-dismissible fade show" role="alert">
@@ -32,4 +46,8 @@
     </form>
 </div>
 </body>
+<footer>
+  <p>Copyright &copy; 2024 Sunhackers</p>
+</footer> 
 </html>
+
