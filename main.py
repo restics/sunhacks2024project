@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask import Flask, render_template, request, redirect, url_for, session, flash, json
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
@@ -6,16 +6,20 @@ app.secret_key = 'your_secret_key'  # Replace with a random secret key
 
 # Dummy user data for demonstration purposes
 users = {
-    "user@example.com": generate_password_hash("password123")
 }
+
+def database_write():
+    with open('users.json','w') as f:
+        json.dump(users,f)
+
+def database_read():
+    f = open('users.json','r')
+    global users
+    users = json.load(f)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
-
-@app.route('/')
-def signup():
-    return render_template('signup.html')
+    return render_template('login.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -49,4 +53,6 @@ def logout():
 
 
 if __name__ == '__main__':
+    database_read()
+    print(users)
     app.run(debug=True)
