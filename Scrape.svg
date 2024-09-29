@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 61.81 67.51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_未命名漸層_27);
+        opacity: .59;
+      }
+
+      .cls-2 {
+        fill: #fbdaca;
+      }
+    </style>
+    <linearGradient id="_未命名漸層_27" data-name="未命名漸層 27" x1="51.5" y1="46.79" x2="51.5" y2="18.49" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcaa89"/>
+      <stop offset=".11" stop-color="#fd887d"/>
+      <stop offset=".17" stop-color="#ff7878"/>
+      <stop offset=".34" stop-color="#ff5454"/>
+      <stop offset=".51" stop-color="#ff3535"/>
+      <stop offset=".61" stop-color="#ff2a2a"/>
+      <stop offset=".68" stop-color="#fe2e2c"/>
+      <stop offset=".75" stop-color="#fe3a35"/>
+      <stop offset=".82" stop-color="#fe4e44"/>
+      <stop offset=".89" stop-color="#fd6a59"/>
+      <stop offset=".96" stop-color="#fc8e74"/>
+      <stop offset="1" stop-color="#fcaa89"/>
+    </linearGradient>
+  </defs>
+  <g id="_圖層_2-2" data-name="圖層_2">
+    <g>
+      <path class="cls-2" d="M11.61,0s40.77,13.87,46.98,21.32,1.86,13.25,0,19.45-4.97,16.97-5.79,24.63c0,0-6.42,4.14-18.83.83,0,0-3.31-6.83.21-25.04,0,0,2.69-4.79-1.24-6.23s-26.49.64-31.25-2.88S2.92.21,11.61,0Z"/>
+      <path class="cls-1" d="M50.32,19.25s8.93,4.88,7.39,10.48-1.67,18.58-4.88,16.92-1.77-5.17-1.84-12.89,1.48-4.98-3.52-8.43-.98-8.82,2.86-6.08Z"/>
+    </g>
+  </g>
+</svg>
