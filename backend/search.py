@@ -28,4 +28,8 @@ def create_query(prompt):
         model="llama3-8b-8192",
 
     )
+    print(f"question: {prompt} \n\n\n response:{chat_completion.choices[0].message.content}")
     return chat_completion.choices[0].message.content
+
+# TODO: create tests
+# print(create_query("I cut my finger cutting vegetables"))
